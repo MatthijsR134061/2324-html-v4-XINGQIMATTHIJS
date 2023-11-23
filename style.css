@@ -4,12 +4,12 @@
 
 body {
    background-color: #003333;
+   color: whitesmoke;
 }
 
 #wrapper {
+   background-color: grey;
    margin: 0 auto;
-}
-
-p {
-   color: whitesmoke;
+   padding: 2.5rem;
+   width: 60rem;
 }
