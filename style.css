@@ -1,13 +1,13 @@
 * {
    margin: 0;
-   box-sizing: border-box;
 }
+
 body {
    background-color: #003333;
 }
 
 #wrapper {
-   padding: auto;
+   margin: 0 auto;
 }
 
 p {
