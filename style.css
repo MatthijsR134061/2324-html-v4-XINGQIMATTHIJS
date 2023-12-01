@@ -9,14 +9,7 @@
    --color100: #fff;
 }
 
-body {
-   background-color: var(--color30);
-}
-
-#wrapper {
-   background-color: var(--color100);
-   box-shadow: 0 0 5px var(--color00);
-   margin: 4rem auto;
-   padding: 2.5rem;
-   width: 60rem;
+.wrapper {
+   width: 1000px;
+   background-color: black;
 }
