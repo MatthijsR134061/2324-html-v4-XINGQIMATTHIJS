@@ -1,14 +1,21 @@
 * {
    margin: 0;
+   --color00: #000;
+   --color15: #2a3f4f;
+   --color30: #dddddd;
+   --color50: #42647f;
+   --color75: #bbbbbb;
+   --color85: #aaaaaa;
+   --color100: #fff;
 }
 
 body {
-   background-color: #999;
+   background-color: var(--color30);
 }
 
 #wrapper {
-   background-color: #fff;
-   box-shadow: 0 0 5px #000;
+   background-color: var(--color100);
+   box-shadow: 0 0 5px var(--color00);
    margin: 4rem auto;
    padding: 2.5rem;
    width: 60rem;
