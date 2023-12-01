@@ -21,13 +21,21 @@ nav {
    box-shadow: 0 0 5px black;
 }
 
+header {
+   background-color: #42647f;
+   height: 10rem;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+}
+
 .wrapper {
-   width: 1000px;
    height: 100%;
    margin: 0 auto;
 }
 
 .wrapper.nav {
+   width: 1000px;
    box-sizing: border-box;
    padding: 1.25rem 2rem;
    display: flex;
@@ -52,5 +60,11 @@ nav a {
 }
 
 nav a:hover {
-   color: #42647f;
+   color: var(--color50);
+}
+
+.wrapper.main {
+   width: 1000px;
+   margin-top: 4rem;
+   background-color: var(--color100);
 }
