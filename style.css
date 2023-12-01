@@ -1,5 +1,6 @@
 * {
    margin: 0;
+   font-size: 16px;
    --color00: #000;
    --color15: #eeeeee;
    --color30: #dddddd;
@@ -9,7 +10,47 @@
    --color100: #fff;
 }
 
+body {
+   background-color: var(--color30);
+}
+
+nav {
+   width: 100%;
+   height: 4rem;
+   background-color: white;
+   box-shadow: 0 0 5px black;
+}
+
 .wrapper {
    width: 1000px;
-   background-color: black;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.wrapper.nav {
+   box-sizing: border-box;
+   padding: 1.25rem 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   flex-wrap: nowrap;   
+}
+
+.wrapper.nav a:not(:nth-child(1)) {
+   margin-left: 2rem;
+}
+
+nav a {
+   height: 100%;
+   padding: 0.5rem;
+   color: #888888;
+   line-height: 1.5rem;
+   text-align: center;
+   cursor: pointer;
+   text-decoration: none;
+   transition: color 75ms;
+}
+
+nav a:hover {
+   color: #42647f;
 }
