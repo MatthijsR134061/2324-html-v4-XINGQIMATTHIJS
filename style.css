@@ -86,6 +86,10 @@ nav a:hover {
    font-size: 1.5em;
 }
 
+.wrapper.main img {
+   margin-bottom: 2rem;
+}
+
 #sidebar {
    position: sticky;
    width: 100px;
