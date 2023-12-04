@@ -90,12 +90,17 @@ nav a:hover {
    font-size: 1.5em;
 }
 
+.wrapper.main h2 {
+   color: #666666;
+   font-size: 1.2em;
+}
+
 .wrapper.main p {
    font-size: 1em;
    line-height: 1.5em;
 }
 
-.wrapper.main p, .wrapper.main h1 {
+.wrapper.main p, .wrapper.main h1, .wrapper.main h2 {
    margin: 1rem 0;
 }
 
