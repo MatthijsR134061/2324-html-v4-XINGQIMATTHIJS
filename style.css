@@ -1,3 +1,4 @@
+/* font importing */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
@@ -12,6 +13,9 @@
    --color85: #eeeeee;
    --secondary: #ffffff;
 }
+
+
+/* main elements */
 
 body {
    background-color: var(--color75);
@@ -36,6 +40,8 @@ header {
    height: 100%;
    margin: 0 auto;
 }
+
+/* nav */
 
 .wrapper.nav {
    width: 1000px;
@@ -66,11 +72,18 @@ nav a:hover {
    color: var(--accent);
 }
 
+/* main */
+
 .wrapper.main {
    width: 1000px;
    margin-top: 4rem;
    padding: 2rem;
+   font-size: 14px;
    background-color: var(--secondary);
+}
+
+.wrapper.main h1 {
+   font-size: 1.5em;
 }
 
 #sidebar {
