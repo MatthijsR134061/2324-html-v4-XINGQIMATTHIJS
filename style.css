@@ -104,6 +104,14 @@ nav a:hover {
    margin: 1rem 0;
 }
 
+.wrapper.main a {
+   font-weight: bold;
+   color: var(--accent);
+   text-decoration: none;
+}
+
+/* sidebar */
+
 #sidebar {
    position: sticky;
    float: left;
