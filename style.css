@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
    margin: 0;
    font-size: 16px;
+   font-family: 'Lato';
    --color00: #000;
    --color15: #eeeeee;
    --color30: #dddddd;
@@ -67,4 +70,11 @@ nav a:hover {
    width: 1000px;
    margin-top: 4rem;
    background-color: var(--color100);
+}
+
+#sidebar {
+   position: sticky;
+   width: 100px;
+   height: 100px;
+   margin-right: 100px;
 }
