@@ -57,13 +57,13 @@ header {
 
 nav a {
    height: 100%;
-   padding: 0.5rem;
+   padding: 0.5rem 0.75rem;
    color: #888888;
    line-height: 1.5rem;
    text-align: center;
    cursor: pointer;
    text-decoration: none;
-   transition: color 75ms;
+   transition: color 75ms, background-color 75ms;
 }
 
 nav a:hover {
@@ -71,7 +71,7 @@ nav a:hover {
    background-color: var(--color85);
 }
 
-.nav.current {
+#current {
    color: var(--accent);
    font-weight: bold;
 }
