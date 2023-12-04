@@ -80,7 +80,8 @@ nav a:hover {
 }
 
 .wrapper.main h1 {
-   font-size: 1.3em;
+   color: #666666;
+   font-size: 1.5em;
 }
 
 .wrapper.main p {
@@ -88,8 +89,8 @@ nav a:hover {
    line-height: 1.5em;
 }
 
-.wrapper.main img {
-   margin-bottom: 2rem;
+.wrapper.main p, .wrapper.main h1 {
+   margin: 1rem 0;
 }
 
 #sidebar {
