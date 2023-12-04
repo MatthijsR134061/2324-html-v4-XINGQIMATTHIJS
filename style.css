@@ -42,7 +42,6 @@ header {
 }
 
 /* nav */
-
 .wrapper.nav {
    width: 1000px;
    box-sizing: border-box;
@@ -73,7 +72,6 @@ nav a:hover {
 }
 
 /* main */
-
 .wrapper.main {
    width: 1000px;
    margin-top: 4rem;
@@ -83,7 +81,12 @@ nav a:hover {
 }
 
 .wrapper.main h1 {
-   font-size: 1.5em;
+   font-size: 1.3em;
+}
+
+.wrapper.main p {
+   font-size: 1em;
+   line-height: 1.5em;
 }
 
 .wrapper.main img {
