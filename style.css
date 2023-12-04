@@ -68,6 +68,12 @@ nav a {
 
 nav a:hover {
    color: var(--accent);
+   background-color: var(--color85);
+}
+
+.nav.current {
+   color: var(--accent);
+   font-weight: bold;
 }
 
 /* main */
