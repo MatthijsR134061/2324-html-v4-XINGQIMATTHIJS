@@ -4,13 +4,13 @@
    margin: 0;
    font-size: 16px;
    font-family: 'Lato';
-   --color00: #000;
-   --color15: #eeeeee;
-   --color30: #dddddd;
-   --color50: #42647f;
-   --color75: #bbbbbb;
-   --color85: #aaaaaa;
-   --color100: #fff;
+   --primary: #000000;
+   --color15: #aaaaaa;
+   --color30: #bbbbbb;
+   --accent: #42647f;
+   --color75: #dddddd;
+   --color85: #eeeeee;
+   --secondary: #ffffff;
 }
 
 body {
@@ -63,13 +63,13 @@ nav a {
 }
 
 nav a:hover {
-   color: var(--color50);
+   color: var(--accent);
 }
 
 .wrapper.main {
    width: 1000px;
    margin-top: 4rem;
-   background-color: var(--color100);
+   background-color: var(--secondary);
 }
 
 #sidebar {
