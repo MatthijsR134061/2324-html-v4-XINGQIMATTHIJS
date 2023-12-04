@@ -106,6 +106,7 @@ nav a:hover {
 
 #sidebar {
    position: sticky;
+   float: left;
    width: 100px;
    height: 100px;
    margin-right: 100px;
