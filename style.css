@@ -65,6 +65,7 @@ header {
    .wrapper {
       width: 100%;
    }
+   /* reminder: remove sidebar when portrait */
  }
 
 /* nav */
@@ -118,7 +119,7 @@ h2 {
    font-size: 1.2em;
 }
 
-p, h1, h2 {
+p, h2 {
    margin: 1rem 0;
 }
 
@@ -134,6 +135,17 @@ p, h1, h2 {
    font-weight: bold;
    color: var(--accent);
    text-decoration: none;
+}
+
+/* information */
+div.goals {
+   background-color: var(--color75);
+   padding: 2rem;
+}
+
+h2.goals {
+   color: var(--primary);
+   margin: 0;
 }
 
 /* sidebar */
