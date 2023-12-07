@@ -35,17 +35,40 @@ header {
    z-index: -1;
 }
 
-/* wrappers */
-
 .wrapper {
+   width: 1000px;
    height: 100%;
    margin: 0 auto;
+   box-sizing: border-box;
 }
+
+/* responsive design */
+@media screen and (min-width: 1400px) {
+   .wrapper {
+      width: 1000px;
+   }
+ }
+
+ @media screen and (max-width: 1400px) and (min-width: 1200px) {
+   .wrapper {
+      width: 800px;
+   }
+ }
+
+ @media screen and (max-width: 1200px) and (min-width: 1000px) {
+   .wrapper {
+      width: 600px;
+   }
+ }
+
+ @media screen and (orientation: portrait) {
+   .wrapper {
+      width: 100%;
+   }
+ }
 
 /* nav */
 .wrapper.nav {
-   width: 1000px;
-   box-sizing: border-box;
    padding: 1.25rem 2rem;
    display: flex;
    align-items: center;
@@ -101,7 +124,6 @@ p, h1, h2 {
 
 /* main */
 .wrapper.main {
-   width: 1000px;
    margin-top: 4rem;
    padding: 2rem;
    font-size: 14px;
