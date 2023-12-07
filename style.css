@@ -15,7 +15,7 @@
 }
 
 
-/* main elements */
+/* semantic blocks */
 body {
    background-color: var(--color75);
 }
@@ -28,12 +28,14 @@ nav {
 }
 
 header {
-   background-color: #42647f;
    height: 10rem;
    width: 100%;
+   background-color: #42647f;
    position: absolute;
    z-index: -1;
 }
+
+/* wrappers */
 
 .wrapper {
    height: 100%;
@@ -76,6 +78,27 @@ nav a:hover {
    font-weight: bold;
 }
 
+/* text formatting */
+
+p {
+   font-size: 1em;
+   line-height: 1.5em;
+}
+
+h1 {
+   color: #666666;
+   font-size: 1.5em;
+}
+
+h2 {
+   color: #666666;
+   font-size: 1.2em;
+}
+
+p, h1, h2 {
+   margin: 1rem 0;
+}
+
 /* main */
 .wrapper.main {
    width: 1000px;
@@ -83,25 +106,6 @@ nav a:hover {
    padding: 2rem;
    font-size: 14px;
    background-color: var(--secondary);
-}
-
-.wrapper.main h1 {
-   color: #666666;
-   font-size: 1.5em;
-}
-
-.wrapper.main h2 {
-   color: #666666;
-   font-size: 1.2em;
-}
-
-.wrapper.main p {
-   font-size: 1em;
-   line-height: 1.5em;
-}
-
-.wrapper.main p, .wrapper.main h1, .wrapper.main h2 {
-   margin: 1rem 0;
 }
 
 .wrapper.main a {
