@@ -164,7 +164,7 @@ dl {
    grid-template-columns: 40% 60%;
 }
 
-/* dt, dd { */
+dt, dd {
    padding: 0.5rem;
 }
 
