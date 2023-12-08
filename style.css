@@ -164,10 +164,10 @@ dl {
    grid-template-columns: 40% 60%;
 }
 
-dl:nth-child(2n+1) {
-   background-color: var(--color75);
+/* dt, dd { */
+   padding: 0.5rem;
 }
 
-dt, dd {
-   padding: 0.5rem;
+dt:nth-of-type(odd), dd:nth-of-type(odd) {
+   background-color: var(--color75);
 }
