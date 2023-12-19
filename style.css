@@ -16,6 +16,7 @@
    --color-base-80: #eeeeee;
    --color-base-100: #ffffff;
    --color-accent: #42647f;
+   --color-accent-rgb: 66, 100, 127;
 }
 
 /* semantic blocks */
@@ -161,8 +162,9 @@ main article:last-child, main article:last-child > :last-child {
 
 /* information */
 div.goals {
-   background-color: var(--color-base-60);
+   background-color: rgba(var(--color-accent-rgb), 0.2);
    padding: 2rem;
+   border-left: 5px var(--color-accent) solid;
 }
 
 h2.goals {
