@@ -150,38 +150,3 @@ main article {
 main article:last-child, main article:last-child > :last-child {
     margin-bottom: 0;
  }
-
-/* information */
-div.goals {
-   background-color: var(--color-base-60);
-   padding: 2rem;
-}
-
-h2.goals {
-   color: var(--color-base-00);
-   margin: 0;
-}
-
-/* sidebar */
-
-#sidebar {
-   position: sticky;
-   float: left;
-   width: 100px;
-   height: 100px;
-   margin-right: 100px;
-}
-
-/* definitions */
-dl {
-   display: grid;
-   grid-template-columns: 40% 60%;
-}
-
-dt, dd {
-   padding: 0.5rem;
-}
-
-dt:nth-of-type(odd), dd:nth-of-type(odd) {
-   background-color: var(--color-base-60);
-}
