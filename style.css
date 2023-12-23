@@ -55,10 +55,11 @@ footer {
    height: 3rem;
    margin: 2rem auto 0;
    box-sizing: border-box;
+   font-size: 14px;
 }
 
 footer .wrapper {
-   padding: 0 0.5rem;
+   padding: 0 1rem;
    font-family: 'EB Garamond', serif;
    display: flex;
    flex-wrap: nowrap;
@@ -102,23 +103,43 @@ footer span {
    .wrapper {
       width: 100%;
    }
+
+   main .wrapper {
+      margin-top: 10rem !important;
+   }
    /* reminder: remove sidebar when portrait, currently interfering with header placement*/
+}
+
+@media screen and (max-width: 560px) {
+   nav .wrapper {
+      justify-content: space-between !important;
+   }
+
+   nav button {
+      display: inline-block !important;
+   }
+
+   nav a[data-collapsible="true"] {
+      display: none;
+   }
 }
 
 /* nav */
 nav .wrapper {
-   padding: 1.25rem 2rem;
+   padding: 0.75rem 2rem;
    display: flex;
    align-items: center;
    justify-content: left;
    flex-wrap: nowrap;   
-   font-size: 15px;
+   font-size: 14px;
 }
  
 nav a {
-   height: 100%;
-   font-size: 1em;
+   white-space: nowrap;
+   box-sizing: border-box;
+   height: 2.5rem;
    padding: 0.5rem 0.75rem;
+   font-size: 1em;
    color: var(--color-base-30);
    line-height: 1.5rem;
    text-align: center;
@@ -133,7 +154,19 @@ nav a:hover {
 }
 
 nav .wrapper a:not(:first-child) {
-   margin-left: 2rem;
+   margin-left: 1.5rem;
+}
+
+nav button {
+   display: none;
+   white-space: nowrap;
+   height: 100%;
+   padding: 0.5rem 0.75rem;
+   font-size: 1em;
+   color: var(--color-base-30);
+   line-height: 1.5rem;
+   text-align: center;
+   cursor: pointer;
 }
  
 #current {
@@ -164,7 +197,7 @@ h2 {
 main .wrapper {
    margin-top: 4rem;
    padding: 2rem;
-   font-size: 15px;
+   font-size: 14px;
    background-color: var(--color-base-100);
 }
 
