@@ -5,8 +5,11 @@
 
 * {
    margin: 0;
-   font-size: 16px;
    font-family: 'Open Sans', 'Lato', sans-serif;
+}
+
+:root {
+   font-size: 16px;
    --color-base-00: #000000;
    --color-base-20: #666666;
    --color-base-30: #888888;
@@ -24,34 +27,57 @@ body {
    background-color: var(--color-base-60);
  }
  
- nav {
+nav {
    width: 100%;
    height: 4rem;
    background-color: var(--color-base-100);
    box-shadow: 0 0 5px black;
- }
+}
  
- header {
+header {
    height: 10rem;
    width: 100%;
    background-color: var(--color-accent);
    position: absolute;
    z-index: -1;
- }
+}
 
- .wrapper {
+.wrapper {
    width: 1000px;
    height: 100%;
    margin: 0 auto;
    box-sizing: border-box;
- }
+}
 
- footer {
+/* footer */
+footer {
    width: 100%;
    height: 3rem;
    margin: 2rem auto 0;
    box-sizing: border-box;
- }
+}
+
+footer .wrapper {
+   padding: 0 0.5rem;
+   font-family: 'EB Garamond', serif;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+footer h3 {
+   font-family: inherit;
+   font-weight: normal;
+}
+
+footer span {
+   color: var(--color-base-30);
+   font-size: 0.8rem;
+   font-family: inherit;
+   font-style: italic;
+   font-variant-numeric: oldstyle-nums;
+}
 
  /* responsive design */
 @media screen and (min-width: 1400px) {
@@ -119,19 +145,19 @@ nav .wrapper a:not(:first-child) {
 p {
    font-size: 1em;
    line-height: 1.5em;
-   margin-bottom: 0.75rem;
+   margin-bottom: 1rem;
 }
  
 h1 {
    color: var(--color-base-20);
    font-size: 1.5em;
-   margin-bottom: 1rem;
+   margin-bottom: 1.25rem;
 }
  
 h2 {
    color: var(--color-base-20);
    font-size: 1.2em;
-   margin-bottom: 0.75rem;
+   margin-bottom: 1rem;
 }
 
  /* main */
@@ -142,14 +168,15 @@ main .wrapper {
    background-color: var(--color-base-100);
 }
 
-main article, main .wrapper a {
-   font-size: inherit;
-}
-
 main .wrapper a {
    font-weight: bold;
    color: var(--color-accent);
-   text-decoration: none;
+   text-decoration: underline;
+}
+
+main .wrapper b {
+   font-weight: bold;
+   color: var(--color-accent);
 }
 
 main article {
@@ -162,18 +189,21 @@ main article:last-child, main article:last-child > :last-child {
 
 /* information */
 div.goals {
-   background-color: rgba(var(--color-accent-rgb), 0.2);
+   margin-bottom: 1rem;
    padding: 2rem;
+   background-color: rgba(var(--color-accent-rgb), 0.2);
    border-left: 5px var(--color-accent) solid;
 }
 
-h2.goals {
-   color: var(--color-base-00);
-   margin: 0;
+.goals h2, .goals p {
+   margin-bottom: 0.75rem;
+}
+
+.goals ol {
+   line-height: 1.75em;
 }
 
 /* sidebar */
-
 #sidebar {
    position: sticky;
    float: left;
@@ -194,27 +224,4 @@ dt, dd {
 
 dt:nth-of-type(odd), dd:nth-of-type(odd) {
    background-color: var(--color-base-60);
-}
-
-/* footer */
-footer .wrapper {
-   padding: 0 0.5rem;
-   font-family: 'EB Garamond', serif;
-   display: flex;
-   flex-wrap: nowrap;
-   justify-content: space-between;
-   align-items: center;
-}
-
-footer h3 {
-   font-family: inherit;
-   font-weight: normal;
-}
-
-footer span {
-   color: var(--color-base-30);
-   font-size: 0.8rem;
-   font-family: inherit;
-   font-style: italic;
-   font-variant-numeric: oldstyle-nums;
 }
