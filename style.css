@@ -137,6 +137,7 @@ nav .wrapper {
 nav a {
    white-space: nowrap;
    box-sizing: border-box;
+   user-select: none;
    height: 2.5rem;
    padding: 0.5rem 0.75rem;
    font-size: 1em;
