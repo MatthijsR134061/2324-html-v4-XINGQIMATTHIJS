@@ -98,11 +98,11 @@ footer span {
    }
 }
  
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), (max-width: 1000px) {
    .wrapper {
       width: 100%;
    }
-   /* reminder: remove sidebar when portrait */
+   /* reminder: remove sidebar when portrait, currently interfering with header placement*/
 }
 
 /* nav */
