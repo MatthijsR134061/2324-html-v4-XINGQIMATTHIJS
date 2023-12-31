@@ -12,22 +12,35 @@
 :root {
    font-size: 16px;
    --base-00: #000000;
-   --base-30: #888888;;
-   --base-50: #bbbbbb;;
+   --base-10: #444444;
+   --base-30: #888888;
+   --base-50: #bbbbbb;
    --base-70: #dddddd;
    --base-100: #ffffff;
    --accent-main: #42647f;
    --accent-secondary: #548d4a;
    --accent-tertiary: #d78d2c;
-/* } */
+}
 
 /* semantic elements */
 nav {
-   width: 100%;
-   height: 4.5rem;
+   width: calc(100% - 4rem);
+   height: 3rem;
+   padding: 0.75rem 2rem;
+   box-sizing: content-box;
    position: sticky;
-   background-color: red;
-   border-bottom: 1px solid var(--color-base-30);
+   display: flex;
+   background-color: var(--base-100);
+   border-bottom: 1px solid var(--base-70);
+   font-size: 15px;
+}
+
+nav .left {
+   width: 22rem;
+   height: 2rem;
+   margin: auto 0;
+   margin-right: 2rem;
+   border-right: 1px solid var(--base-70);
 }
 
 nav .wrapper {
@@ -41,9 +54,23 @@ nav .wrapper {
 }
 
 nav a {
+   height: 100%;
+   display: inline-block;
    background-color: violet;
+   text-decoration: none;
 }
 
 nav a:not(:first-child) {
    margin-left: 2rem;
+}
+
+nav .left a{
+   line-height: 2rem;
+   color: var(--base-10);
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+nav .right a{
+
 }
