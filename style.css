@@ -28,6 +28,8 @@ nav {
    width: 100%;
    height: 4.5rem;
    box-sizing: content-box;
+   position: sticky;
+   top: 0;
    display: flex;
    justify-content: center;
    background-color: var(--base-100);
@@ -41,12 +43,12 @@ nav .wrapper {
    height: 100%;
    padding: 1rem 0;
    display: flex;
-   align-items: center;
+   flex-direction: row;
 }
 
 nav .left, nav .center, nav .center div {
    display: flex; /* flexbox for divisions prevents whitespace between a-tags */
-   align-items: center;
+   flex-direction: row;
    flex-wrap: nowrap;
 }
 
@@ -105,7 +107,6 @@ nav a#current {
 /* main */
 main {
    width: 100%;
-   height: calc(100vh - 4.5rem - 1px);
    display: flex;
    justify-content: center;
 }
@@ -114,19 +115,29 @@ main .wrapper {
    width: 100%;
    max-width: calc(22rem + 1100px + 15rem); /* left sidebar + content + right sidebar */
    height: 100%;
-   display: grid;
-   grid-template-columns: 22rem auto 15rem
+   display: flex;
+   flex-direction: row;
 }
 
 main .left {
+   width: 22rem;
+   height: calc(100vh - 4.5rem);
+   position: sticky;
+   top: 4.5rem;
    border-right: 1px solid var(--base-70);
 }
 
 main .center {
-
+   width: calc(100% - 22rem - 15rem);
+   padding: 3rem 4rem;
+   /* overflow-y: auto; */
 }
 
 main .right {
+   width: 15rem;
+   height: calc(100vh - 4.5rem);
+   position: sticky;
+   top: 4.5rem;
    border-left: 1px solid var(--base-70);
 }
 
