@@ -99,3 +99,17 @@ nav a#current {
    font-weight: bold;
    color: var(--accent-main);
 }
+
+/* responsive design */
+@media only screen and (max-width: calc(400px + 22rem)) {
+   nav .center {
+      display: none;
+   }
+
+   nav .left {
+      width: 100%;
+      margin-right: none;
+      border-right: none;
+      justify-content: center;
+   }
+ }
