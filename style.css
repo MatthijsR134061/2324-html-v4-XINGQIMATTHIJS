@@ -12,6 +12,7 @@
 :root {
    font-size: 16px;
    --base-00: #000000;
+   --base-00-rgb: 0, 0, 0;
    --base-10: #444444;
    --base-30: #888888;
    --base-50: #bbbbbb;
@@ -22,55 +23,79 @@
    --accent-tertiary: #d78d2c;
 }
 
-/* semantic elements */
+/* navigational bar */
 nav {
-   width: calc(100% - 4rem);
-   height: 3rem;
-   padding: 0.75rem 2rem;
+   width: 100%;
+   height: 4.5rem;
    box-sizing: content-box;
    position: sticky;
    display: flex;
+   justify-content: center;
    background-color: var(--base-100);
    border-bottom: 1px solid var(--base-70);
    font-size: 15px;
 }
 
-nav .left {
-   width: 22rem;
-   height: 2rem;
-   margin: auto 0;
-   margin-right: 2rem;
-   border-right: 1px solid var(--base-70);
-}
-
 nav .wrapper {
-   width: 1100px;
+   width: 100%;
+   max-width: calc(22rem + 1100px + 15rem); /* left sidebar + content + right sidebar */
    height: 100%;
-   margin: 0 auto;
-   background-color: blue;
+   padding: 1rem 2rem;
    display: flex;
    align-items: center;
+}
+
+nav .left, nav .center, nav .center div {
+   display: flex; /* flexbox for divisions prevents whitespace between a-tags */
+   align-items: center;
+   flex-wrap: nowrap;
+}
+
+nav .left {
+   width: 22rem;
+   height: 100%;
+   border-right: 1px solid var(--base-70);
+   margin-right: 2rem;
+}
+
+nav .center {
+   width: calc(100% - 22rem);
+   height: 100%;
    justify-content: space-between;
 }
 
-nav a {
+nav .center div, nav a {
    height: 100%;
-   display: inline-block;
-   background-color: violet;
-   text-decoration: none;
 }
 
 nav a:not(:first-child) {
    margin-left: 2rem;
 }
 
-nav .left a{
-   line-height: 2rem;
+nav .left a {
+   height: 100%;
+   padding: 0 1rem;
+   line-height: 2.5rem;
    color: var(--base-10);
-   font-size: 1.5em;
+   font-size: 1.75em;
    font-weight: bold;
+   text-decoration: none;
 }
 
-nav .right a{
+nav .center a {
+   padding: 0.75rem 1rem;
+   color: var(--base-30);
+   text-decoration: none;
+   transition: background-color 100ms, color 100ms;
+}
 
+nav .center a:hover {
+   background-color: rgba(var(--base-00-rgb), 0.15);
+   color: var(--accent-main);
+}
+
+nav a#current {
+   border-bottom: 2px solid var(--accent-main);
+   font-weight: bold;
+   color: var(--accent-main);
 }
