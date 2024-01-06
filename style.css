@@ -28,7 +28,6 @@ nav {
    width: 100%;
    height: 4.5rem;
    box-sizing: content-box;
-   position: sticky;
    display: flex;
    justify-content: center;
    background-color: var(--base-100);
@@ -40,7 +39,7 @@ nav .wrapper {
    width: 100%;
    max-width: calc(22rem + 1100px + 15rem); /* left sidebar + content + right sidebar */
    height: 100%;
-   padding: 1rem 2rem;
+   padding: 1rem 0;
    display: flex;
    align-items: center;
 }
@@ -54,13 +53,14 @@ nav .left, nav .center, nav .center div {
 nav .left {
    width: 22rem;
    height: 100%;
+   padding-left: 2rem;
    border-right: 1px solid var(--base-70);
-   margin-right: 2rem;
 }
 
 nav .center {
    width: calc(100% - 22rem);
    height: 100%;
+   padding: 0 2rem;
    justify-content: space-between;
 }
 
@@ -100,6 +100,48 @@ nav a#current {
    color: var(--accent-main);
 }
 
+/* main */
+main {
+   width: 100%;
+   height: calc(100vh - 4.5rem - 1px);
+   display: flex;
+   justify-content: center;
+}
+
+main .wrapper {
+   width: 100%;
+   max-width: calc(22rem + 1100px + 15rem); /* left sidebar + content + right sidebar */
+   height: 100%;
+   display: grid;
+   grid-template-columns: 22rem auto 15rem
+}
+
+main .left {
+   border-right: 1px solid var(--base-70);
+}
+
+main .center {
+
+}
+
+main .right {
+   border-left: 1px solid var(--base-70);
+}
+
+/* footer */
+footer {
+   width: 100%;
+   height: 4.5rem;
+   border-top: 1px solid var(--base-70);
+}
+
+footer .wrapper {
+   width: 100%;
+   max-width: calc(22rem + 1100px + 15rem); /* left sidebar + content + right sidebar */
+   height: 4.5rem;
+   padding: 1rem 2rem;
+}
+
 /* responsive design */
 @media only screen and (max-width: calc(400px + 22rem)) {
    nav .center {
@@ -108,7 +150,6 @@ nav a#current {
 
    nav .left {
       width: 100%;
-      margin-right: none;
       border-right: none;
       justify-content: center;
    }
