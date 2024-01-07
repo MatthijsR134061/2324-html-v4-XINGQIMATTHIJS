@@ -231,6 +231,7 @@ div.goals li {
 }
 
 /* responsive design */
+/* layout */
 @media only screen and (max-width: calc(530px + 37rem)) {
     aside.right {
         display: none;
@@ -259,19 +260,21 @@ div.goals li {
     }   
 }
 
-@media only screen and (max-width: 450) {
+/* navigation bar */
+@media only screen and (max-width: 800px) {
     nav .center {
         display: none;
     }
  
     nav .left {
         width: 100%;
+        padding-left: 0;
         border-right: none;
         justify-content: center;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 450px) {
     nav .center {
         display: none;
     }
