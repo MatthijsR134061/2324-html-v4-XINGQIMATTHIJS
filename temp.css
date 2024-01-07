@@ -230,7 +230,36 @@ div.goals li {
     line-height: 2em;
 }
 
-@media only screen and (max-width: calc(400px + 22rem)) {
+/* responsive design */
+@media only screen and (max-width: calc(530px + 37rem)) {
+    aside.right {
+        display: none;
+    }
+ 
+    div#container .center {
+        width: calc(100% - 22rem);
+    }
+}
+
+@media only screen and (max-width: calc(530px + 22rem)) {
+    aside.left {
+        display: none;
+    }
+
+    div#container .left.background {
+        display: none;
+    }
+
+    div#container .center {
+        width: 100%;
+    }
+
+    nav .left {
+        width: 15rem;
+    }   
+}
+
+@media only screen and (max-width: 450) {
     nav .center {
         display: none;
     }
@@ -242,12 +271,14 @@ div.goals li {
     }
 }
 
-@media only screen and (min-width: calc(400px + 22rem)) and (max-width: calc(400px + 37rem)) {
-    aside .right {
+@media only screen and (max-width: 800px) {
+    nav .center {
         display: none;
     }
  
-    main .center {
-        width: calc(100% - 22rem);
+    nav .left {
+        width: 100%;
+        border-right: none;
+        justify-content: center;
     }
 }
