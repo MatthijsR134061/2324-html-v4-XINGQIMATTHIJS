@@ -208,6 +208,7 @@ article > :last-child {
     margin-bottom: 0;
 }
 
+/* goals */
 div.goals {
     padding: 1rem 1.5rem;
     margin-bottom: 1rem;
@@ -229,6 +230,26 @@ div.goals li {
     padding-left: 1em;
     line-height: 2em;
 }
+
+/* glossary */
+div.glossary {
+    width: 100%;
+}
+
+.glossary dl {
+    display: grid;
+    grid-template-columns: 40% 60%;
+ }
+ 
+.glossary dt, .glossary dd {
+    padding: 0.5rem;
+ }
+ 
+.glossary dt:nth-of-type(odd), .glossary dd:nth-of-type(odd) {
+    background-color: var(--base-70);
+}
+
+/* cards */
 
 /* responsive design */
 /* layout */
