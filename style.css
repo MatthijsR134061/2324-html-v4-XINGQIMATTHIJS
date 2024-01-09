@@ -200,6 +200,11 @@ header {
     justify-content: center;
 }
 
+header h1 {
+    margin-bottom: 0;
+    color: var(--base-100)
+}
+
 main article:not(:last-of-type) {
     margin-bottom: 1.5rem;
 }
