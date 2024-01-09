@@ -13,7 +13,7 @@
 :root {
     font-size: 16px;
     --base-00: #000000;
-    --base-00-rgb: 0, 0, 0;
+    --base-00-rgb: 0 0 0;
     --base-10: #444444;
     --base-30: #888888;
     --base-50: #bbbbbb;
@@ -24,6 +24,10 @@
     --accent-main-rgb: 66, 100, 127;
     --accent-secondary: #548d4a;
     --accent-tertiary: #d78d2c;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* wrappers */
@@ -115,6 +119,44 @@ nav a#current {
     color: var(--accent-main);
 }
 
+/* navigation sidebars */
+aside {
+    padding: 1rem;
+    font-size: 15px;
+}
+
+aside p {
+    padding: 0 2.5rem 0.75rem 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--base-30);
+    display: inline-block;
+    font-size: 1em;
+    color: var(--base-30);
+}
+
+main article {
+    scroll-margin-top: 80px;
+}
+
+aside ul {
+    padding-left: 0.75rem;
+    list-style-type: none;
+}
+
+aside li {
+    padding: 0.25rem 0;
+}
+
+aside a {
+    color: var(--base-00);
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+aside a:hover {
+    color: var(--accent-secondary);
+}
+
 /* main container */
 div#container aside {
     z-index: 5;
@@ -157,19 +199,19 @@ main {
     font-size: 15px;
 }
 
-p {
+main p {
     font-size: 1em;
     line-height: 1.5em;
     margin-bottom: 1rem;
 }
   
-h1 {
+main h1 {
     color: var(--color-base-20);
     font-size: 1.5em;
     margin-bottom: 1.25rem;
 }
   
-h2 {
+main h2 {
     color: var(--color-base-20);
     font-size: 1.2em;
     margin-bottom: 1rem;
@@ -255,6 +297,21 @@ div.glossary {
 }
 
 /* cards */
+div.photos {
+    width: 100%;
+}
+
+.photos div {
+    width: 20rem;
+    height: 15rem;
+    margin: 0 1rem 1rem 0;
+    background-color: red;
+    float: left;
+}
+
+.photos div:last-child {
+    clear: both;
+}
 
 /* responsive design */
 /* layout */
