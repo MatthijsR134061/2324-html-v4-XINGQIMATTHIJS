@@ -181,15 +181,9 @@ div#container .left.background {
     background-color: var(--base-90);
 }
 
-div#container .right {
-    width: 15rem;
-    background-color: var(--base-100);
-    border-left: 1px solid var(--base-70);
-}
-
 div#container .center {
     z-index: 0;
-    width: calc(100% - 37rem);
+    width: calc(100% - 22rem);
     padding: 3rem 4rem;
 }
 
@@ -315,16 +309,6 @@ div.photos {
 
 /* responsive design */
 /* layout */
-@media only screen and (max-width: calc(530px + 37rem)) {
-    aside.right {
-        display: none;
-    }
- 
-    div#container .center {
-        width: calc(100% - 22rem);
-    }
-}
-
 @media only screen and (max-width: calc(530px + 22rem)) {
     aside.left {
         display: none;
@@ -337,15 +321,11 @@ div.photos {
     div#container .center {
         width: 100%;
         padding: 2rem;
-    }
-
-    nav .left {
-        width: 15rem;
-    }   
+    }  
 }
 
 /* navigation bar */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
     nav .center {
         display: none;
     }
@@ -353,18 +333,6 @@ div.photos {
     nav .left {
         width: 100%;
         padding-left: 0;
-        border-right: none;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    nav .center {
-        display: none;
-    }
- 
-    nav .left {
-        width: 100%;
         border-right: none;
         justify-content: center;
     }
