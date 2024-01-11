@@ -50,20 +50,27 @@ main, main > .container {
 
 /* phase 2 */
 .container#phase-2 {
-    height: 70%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     background-color: var(--background-main);
 }
 
+#phase-2 div {
+    width: 100%;
+}
+
 #phase-2 .warning {
     height: 40%;
+    display: flex;
+    flex-direction: column-reverse;
     background-color: red;
+    color: white;
 }
 
 #phase-2 .text {
-    height: 30%;
+    height: 60%;
     background-color: blue;
 }
 
