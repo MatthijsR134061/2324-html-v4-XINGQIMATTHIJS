@@ -257,7 +257,7 @@ main ul {
 
 }
 
-ul li:before {
+main ul li:before {
 content: "-";
 position: absolute;
 margin-left: -1em;
