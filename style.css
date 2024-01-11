@@ -216,6 +216,12 @@ article a {
     text-decoration: underline;
 }
 
+h4 a {
+    color: var(--accent-main);
+    font-weight: bold;
+    text-decoration: none;
+}
+
 article b {
     color: var(--accent-secondary);
     font-weight: bold;
