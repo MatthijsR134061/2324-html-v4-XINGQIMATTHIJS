@@ -217,6 +217,10 @@ article a {
     text-decoration: none;
 }
 
+article h4 {
+    color: var(--accent-main);
+}
+
 article b {
     color: var(--accent-secondary);
     font-weight: bold;
