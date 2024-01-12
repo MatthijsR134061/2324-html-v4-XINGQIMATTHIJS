@@ -213,11 +213,6 @@ main h2 {
 
 article a {
     color: var(--accent-main);
-    text-decoration: underline;
-}
-
-h4 a {
-    color: var(--accent-main);
     font-weight: bold;
     text-decoration: none;
 }
