@@ -53,6 +53,12 @@ c-yellow {
     100% {visibility: hidden; height: 0;}
 }
 
+@keyframes overwrite {
+    0% {height: 0;}
+    50% {height: 100%;}
+    100% {height: 0;}
+}
+
 /* phase 3 */
 #phase-3 {
     background-color: var(--base-10);
@@ -96,7 +102,7 @@ main div {
 }
 
 #line-2 p:nth-child(1) {
-    animation: print 0s 18s forwards, clear 0s 20s forwards;
+    animation: overwrite 4s steps(2, end) 18s forwards;
 }
 
 #line-2 p:nth-child(2) {
@@ -120,7 +126,7 @@ main div {
 }
 
 #line-2 p:nth-child(7) {
-    animation: print 0s 30s forwards, clear 0 33s forwards;
+    animation: print 0s 30s forwards, clear 0s 33s forwards;
 }
 
 #line-2 p:nth-child(8) {

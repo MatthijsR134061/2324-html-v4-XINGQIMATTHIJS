@@ -305,9 +305,11 @@ div.glossary {
     background-color: var(--base-70);
 }
 
-/* cards */
+/* cards, Hier is gekozen om flexbox te gebruiken in plaats van float voor de flexibiliteit */
 div.photos {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .photos div {
@@ -315,11 +317,6 @@ div.photos {
     height: 15rem;
     margin: 0 1rem 1rem 0;
     background-color: red;
-    float: left;
-}
-
-.photos div:last-child {
-    clear: both;
 }
 
 /* responsive design */
