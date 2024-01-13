@@ -263,7 +263,6 @@ position: absolute;
 margin-left: -1em;
 }
 
-
 article > :last-child {
     margin-bottom: 0;
 }
@@ -325,10 +324,17 @@ div.photos {
 }
 
 .photos div {
-    width: 33.3%;
     height: 100%; 
     margin: 0 1rem 1rem 0;
     /* background-color: red; */
+}
+
+.three-img div {
+    width: 33.3%;
+}
+
+.two-img div {
+    width: 50%;
 }
 
 .photos div:hover {
@@ -344,6 +350,10 @@ div.photos {
     font-style: italic;
 }
 
+.kleurenstaal div {
+    height: 100%;
+    width: 10%;
+}
 /* responsive design */
 /* layout */
 @media only screen and (max-width: calc(530px + 22rem)) {
