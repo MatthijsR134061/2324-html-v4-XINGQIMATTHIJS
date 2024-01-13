@@ -270,6 +270,7 @@ article > :last-child {
 
 /* Footer */
 footer p {
+    margin-top: 3rem;
     color: var(--base-30);
     font-style: italic;
     text-align: center;
