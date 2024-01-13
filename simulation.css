@@ -196,3 +196,7 @@ body > div, #phase-2 p {
 #line-7 p {
     animation: print 4s steps(2, end) 74s forwards;
 }
+
+#line-7 a {
+    color: var(--accent-green);
+}
