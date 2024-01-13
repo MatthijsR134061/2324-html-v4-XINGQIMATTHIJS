@@ -317,10 +317,23 @@ div.photos {
 }
 
 .photos div {
-    width: 20rem;
-    height: 15rem;
+    width: 33.3%;
+    height: 100%; 
     margin: 0 1rem 1rem 0;
-    background-color: red;
+    /* background-color: red; */
+}
+
+.photos div:hover {
+    border: 1px solid var(--accent-main);
+}
+
+.photos img {
+    width: 100%;
+}
+
+.photos p {
+    text-align: center;
+    font-style: italic;
 }
 
 /* responsive design */
