@@ -50,13 +50,13 @@ c-yellow {
 
 @keyframes clear {
     0% {visibility: visible; height: 100%;}
-    100% {visibility: hidden; height: 0;}
+    100% {visibility: hidden; height: 0; margin-bottom: 0;}
 }
 
 @keyframes overwrite {
-    0% {height: 0;}
+    0% {visibility: visible; height: 0;}
     50% {height: 100%;}
-    100% {height: 0;}
+    100% {visibility: hidden; height: 0;}
 }
 
 /* phase 3 */
@@ -68,6 +68,7 @@ c-yellow {
     max-width: 1600px;
     padding: 4rem;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #phase-3 p {
@@ -102,61 +103,86 @@ main div {
 }
 
 #line-2 p:nth-child(1) {
-    animation: overwrite 4s steps(2, end) 18s forwards;
+    animation: overwrite 4s steps(1, end) 16s forwards;
 }
 
 #line-2 p:nth-child(2) {
-    animation: print 0s 20s forwards, clear 0s 22s forwards;
+    animation: overwrite 4s steps(1, end) 18s forwards;
 }
 
 #line-2 p:nth-child(3) {
-    animation: print 0s 22s forwards, clear 0s 24s forwards;
+    animation: overwrite 4s steps(1, end) 20s forwards;
 }
 
 #line-2 p:nth-child(4) {
-    animation: print 0s 24s forwards, clear 0s 26s forwards;
+    animation: overwrite 4s steps(1, end) 22s forwards;
 }
 
 #line-2 p:nth-child(5) {
-    animation: print 0s 26s forwards, clear 0s 28s forwards;
+    animation: overwrite 4s steps(1, end) 24s forwards;
 }
 
 #line-2 p:nth-child(6) {
-    animation: print 0s 28s forwards, clear 0s 30s forwards;
+    animation: overwrite 4s steps(1, end) 26s forwards;
 }
 
 #line-2 p:nth-child(7) {
-    animation: print 0s 30s forwards, clear 0s 33s forwards;
+    animation: overwrite 6s steps(1, end) 27s forwards;
 }
 
 #line-2 p:nth-child(8) {
-    animation: print 0s 33s forwards;
+    animation: overwrite 6s steps(1, end) 30s forwards;
 }
 
-/* #line-2 p:nth-child(1) {
-    animation: overwrite 4s steps(2, end) 0s forwards;
+/* line-3 */
+#line-1, #line-2 {
+    animation: clear 0s 36s forwards;
 }
 
-#line-2 p:nth-child(2) {
-    animation: overwrite 4s steps(2, end) 2s forwards;
+#line-3 {
+    height: 3.5rem;
 }
 
-#line-2 p:nth-child(3) {
-    animation: overwrite 4s steps(2, end) 4s forwards;
+#line-3 p {
+    animation: print 6s steps(2, start) 36s forwards; 
 }
 
-#line-2 p:nth-child(4) {
-    animation: overwrite 4s steps(2, end) 6s forwards;
+/* line-4 */
+#line-3 {
+    animation: clear 0s 42s forwards;
 }
 
-#line-2 p:nth-child(5) {
-    animation: overwrite 4s steps(2, end) 8s forwards;
+#line-4 {
+    height: 14rem;
 }
 
-#line-2 p:nth-child(6) {
-    animation: overwrite 4s steps(2, end) 10s forwards;
+#line-4 p {
+    white-space: pre;
+    animation: print 4s steps(8, start) 42s forwards;
 }
 
-#line-2 p:nth-child(7) {
-    animation: overwrite 4s steps(2, end) 12s forwards;
-} */
+/* line-5, 6 */
+#line-5, #line-6 {
+    height: 8.75rem;
+}
+
+#line-5 p {
+    animation: print 10s steps(5, end) 46s forwards;
+}
+
+#line-6 p {
+    animation: print 5s steps(5, end) 56s forwards;
+}
+
+/* line-7 */
+#line-4, #line-5, #line-6 {
+    animation: clear 0s 63s forwards;
+}
+
+#line-7 {
+    height: 3.5rem;
+}
+
+#line-7 p {
+    animation: print 4s steps(2, end) 63s forwards;
+}
