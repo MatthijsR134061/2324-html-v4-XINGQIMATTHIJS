@@ -25,11 +25,6 @@
     --accent-yellow: #d7c02c;
 }
 
-body > div, .wrapper {
-    width: 100%;
-    height: 100%;
-}
-
 c-red {
     color: var(--accent-red);
 }
@@ -49,8 +44,8 @@ c-yellow {
 }
 
 @keyframes clear {
-    0% {visibility: visible; height: 100%;}
-    100% {visibility: hidden; height: 0;}
+    0% {height: 0;}
+    100% {height: 0; margin-bottom: 0;}
 }
 
 @keyframes overwrite {
@@ -59,27 +54,57 @@ c-yellow {
     100% {visibility: hidden; height: 0;}
 }
 
-/* phase 3 */
-#phase-3 {
-    background-color: var(--base-10);
+/* general */
+body {
+    height: 100vh;
 }
 
-#phase-3 .wrapper {
-    max-width: 1600px;
-    padding: 4rem;
-    margin: 0 auto;
+body > div, #phase-2 p {
+    overflow: hidden;
 }
 
-#phase-3 p {
+#phase-2 .wrapper div {
+    overflow: hidden;
+    margin-bottom: 1.75rem;
+}
+
+#phase-2 p {
     font-family: 'Source Code Pro', serif;
     height: 0;
-    overflow: hidden;
     color: var(--base-90);
     line-height: 1.75rem;
 }
 
-main div {
-    margin-bottom: 1.75rem;
+/* phase 1 */
+#phase-1 {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    animation: clear 0s 10s forwards;
+}
+
+/* phase 2 */
+#phase-2 {
+    width: 100%;
+    height: 0;
+    background-color: var(--base-10);
+    animation: print 0s 10s forwards;
+}
+
+#phase-2 .wrapper {
+    max-width: 1600px;
+    padding: 4rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* line 1 */
+#line-1 {
+    height: 8.75rem;
+}
+
+#line-1 p {
+    animation: print 15s steps(5, end) 10s forwards;
 }
 
 /* line 2 */
@@ -87,39 +112,87 @@ main div {
     height: 1.75rem;
 }
 
-#line-2 p {
-    visibility: hidden;
-    height: 0;
-}
-
 #line-2 p:nth-child(1) {
-    animation: overwrite 4s steps(1, end) 0s forwards;
+    animation: overwrite 4s steps(1, end) 26s forwards;
 }
 
 #line-2 p:nth-child(2) {
-    animation: overwrite 4s steps(1, end) 2s forwards;
+    animation: overwrite 4s steps(1, end) 28s forwards;
 }
 
 #line-2 p:nth-child(3) {
-    animation: overwrite 4s steps(1, end) 4s forwards;
+    animation: overwrite 4s steps(1, end) 30s forwards;
 }
 
 #line-2 p:nth-child(4) {
-    animation: overwrite 4s steps(1, end) 6s forwards;
+    animation: overwrite 4s steps(1, end) 32s forwards;
 }
 
 #line-2 p:nth-child(5) {
-    animation: overwrite 4s steps(1, end) 8s forwards;
+    animation: overwrite 4s steps(1, end) 34s forwards;
 }
 
 #line-2 p:nth-child(6) {
-    animation: overwrite 4s steps(1, end) 10s forwards;
+    animation: overwrite 4s steps(1, end) 36s forwards;
 }
 
 #line-2 p:nth-child(7) {
-    animation: overwrite 4s steps(1, end) 12s forwards;
+    animation: overwrite 6s steps(1, end) 37s forwards;
 }
 
 #line-2 p:nth-child(8) {
-    animation: overwrite 4s steps(1, end) 14s forwards;
+    animation: overwrite 6s steps(1, end) 40s forwards;
+}
+
+/* line 3 */
+#line-1, #line-2 {
+    animation: clear 0s 46s forwards;
+}
+
+#line-3 {
+    height: 3.5rem;
+}
+
+#line-3 p {
+    animation: print 6s steps(2, start) 46s forwards; 
+}
+
+/* line 4 */
+#line-3 {
+    animation: clear 0s 53s forwards;
+}
+
+#line-4 {
+    height: 14rem;
+}
+
+#line-4 p {
+    white-space: pre;
+    animation: print 4s steps(8, start) 53s forwards;
+}
+
+/* line 5, 6 */
+#line-5, #line-6 {
+    height: 8.75rem;
+}
+
+#line-5 p {
+    animation: print 10s steps(5, end) 58s forwards;
+}
+
+#line-6 p {
+    animation: print 5s steps(5, end) 68s forwards;
+}
+
+/* line-7 */
+#line-4, #line-5, #line-6 {
+    animation: clear 0s 74s forwards;
+}
+
+#line-7 {
+    height: 3.5rem;
+}
+
+#line-7 p {
+    animation: print 4s steps(2, end) 74s forwards;
 }
