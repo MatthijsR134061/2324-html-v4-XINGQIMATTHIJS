@@ -302,6 +302,10 @@ body > div, #phase-3 p {
         padding: 1rem;
     }
 
+    #line-4 p {
+        overflow: auto;
+    }
+
     :root {
         font-size: 14px;
     }
