@@ -295,3 +295,14 @@ body > div, #phase-3 p {
 #line-7 a {
     color: var(--accent-green);
 }
+
+/* responsive */
+@media only screen and (max-width: 835px) {
+    .wrapper {
+        padding: 1rem;
+    }
+
+    :root {
+        font-size: 14px;
+    }
+}
