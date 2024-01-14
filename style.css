@@ -21,7 +21,7 @@
     --base-90: #f8f8f8;
     --base-100: #ffffff;
     --accent-main: #42647f;
-    --accent-main-rgb: 66, 100, 127;
+    --accent-main-rgb: 66 100 127;
     --accent-secondary: #548d4a;
     --accent-tertiary: #d78d2c;
 }
@@ -104,7 +104,7 @@ nav .center a {
     transition: background-color 100ms, color 100ms;
 }
 
-nav a:not(:first-child) {
+nav .center a:not(:first-child) {
     margin-left: 2rem;
 }
 
@@ -113,7 +113,7 @@ nav .center a:hover {
     color: var(--accent-main);
 }
 
-nav a#current {
+nav .center a.current {
     border-bottom: 2px solid var(--accent-main);
     font-weight: bold;
     color: var(--accent-main);
@@ -284,7 +284,7 @@ footer p {
 div.goals {
     padding: 1rem 1.5rem;
     margin-bottom: 1rem;
-    background-color: rgba(var(--accent-main-rgb), 0.2);
+    background-color: rgb(var(--accent-main-rgb) / 0.2);
     border-left: 5px solid var(--accent-main);
 }
 
@@ -357,6 +357,70 @@ div.photos {
     font-style: italic;
 }
 
+/* phone nav */
+#phone-nav, #phone-nav div {
+    height: fit-content;
+    display: block;
+}
+
+#phone-nav input, #phone-nav .menu.dropdown, #phone-nav label {
+    display: none;
+}
+
+#phone-nav label {
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    line-height: 2.5rem;
+    color: var(--base-30);
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown ul {
+    list-style-type: none;
+}
+
+.dropdown li {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu.dropdown a {
+    line-height: 1.5rem;
+    padding: 0.5rem 4rem 0.5rem 1rem;
+    color: var(--base-30);
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    transition: background-color 100ms, color 100ms;
+}
+
+.dropdown a.current {
+    background-color: rgb(var(--accent-main-rgb) / 0.2);
+    color: var(--accent-main);
+    border-left: 3px solid var(--accent-main);
+    font-weight: bold;
+}
+
+.menu.dropdown a:hover:not(.current) {
+    background-color: rgb(var(--base-00-rgb) / 0.15);
+    color: var(--accent-main);
+}
+
+#menu:checked ~ .menu.dropdown {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    display: block;
+    background-color: white;
+    border: 1px solid var(--base-70);
+    line-height: 1rem;
+}
+
 /* responsive design */
 /* layout */
 @media only screen and (max-width: calc(530px + 22rem)) {
@@ -385,5 +449,9 @@ div.photos {
         padding-left: 0;
         border-right: none;
         justify-content: center;
+    }
+
+    #phone-nav label {
+        display: block;
     }
 }
