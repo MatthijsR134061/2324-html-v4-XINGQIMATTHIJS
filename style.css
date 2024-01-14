@@ -330,7 +330,6 @@ div.photos {
 .photos div {
     height: 100%; 
     margin: 0 1rem 1rem 0;
-    /* background-color: red; */
 }
 
 .three-img div {
@@ -358,6 +357,7 @@ div.photos {
     height: 100%;
     width: 10%;
 }
+
 /* responsive design */
 /* layout */
 @media only screen and (max-width: calc(530px + 22rem)) {
